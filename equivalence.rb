@@ -1,17 +1,19 @@
-#encoding: utf-8
+# encoding: utf-8
+# Don't edit this file and save it, or else you'll probably break the demo.
+# Run this under Ruby 1.9.
 def ________________________________________________________________________________
   puts "_" * 80;
 end
 
 puts "A Quick Executable Lesson on Unicode Strings"
 ________________________________________________________________________________
-puts "Identity with ASCII strings is pretty straightforward. If two strings *look*"
+puts "Equivalence with ASCII strings is pretty straightforward. If two strings *look*"
 print "the same, they *are* the same. Here, does 'John' == 'John'? "
 
 puts "John" == "John"
 ________________________________________________________________________________
-puts "But with UTF-8 it's not so straightforward, because there are often several"
-print "ways to encode non-ASCII characters. Does 'João' == 'João'? "
+puts "But with UTF-8 it's not so straightforward, because there are 2 ways"
+print "to encode some non-ASCII characters. Does 'João' == 'João'? "
 puts "João" == "João"
 ________________________________________________________________________________
 
@@ -23,7 +25,7 @@ p "ã".unpack("U*")
 ________________________________________________________________________________
 print 'But this "ã" has three bytes: '
 p "ã".unpack("C*")
-print 'And is two Unicode characters ("a" and "˜"): '
+print 'And is two UTF-8 characters ("a" and "˜"): '
 p "ã".unpack("U*")
 
 ________________________________________________________________________________
@@ -60,4 +62,4 @@ rescue LoadError
 end
 ________________________________________________________________________________
 puts "So if you only remember one thing from this presentation, remember this:"
-puts "\n\nNormalizing your Unicode data before you save it!!!"
+puts "\n\nNormalize your Unicode data before you save it!!!"
