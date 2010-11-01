@@ -7,6 +7,8 @@ I hope you enjoyed my presentation at [RubyConf Brazil 2010](http://www.rubyconf
 This repository has my slides, some code demos you can run, and some links to
 resources to get more information on encodings and Ruby.
 
+You can also see the slides on [Slideshare](http://www.slideshare.net/normanclarke/the-9th-bit-encodings-in-ruby-19).
+
 Comments? Feel free to send me an email at norman@njclarke.com.
 
 ## Encoding Resources
